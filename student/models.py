@@ -57,3 +57,13 @@ class Studentoncourses(models.Model):
         db_table = 'studentoncourses'
 
 
+class Topic(models.Model):
+    topic_id = models.AutoField(primary_key=True)
+    topic_description = models.CharField(max_length=250)
+    topic_plc_value = models.CharField(max_length=20)
+
+    class Meta:
+        managed = False
+        db_table = 'topic'
+
+
