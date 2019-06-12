@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'student.apps.StudentConfig'
+    'student.apps.StudentConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'omega_database',
         'USER': 'postgres',
-        'PASSWORD': 'Kenneth19',
+        'PASSWORD': 'projectomega',
         'HOST': 'localhost',
         'PORT': '5432',
     }
