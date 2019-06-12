@@ -59,6 +59,7 @@ class Studentoncourses(models.Model):
 
 class Topic(models.Model):
     topic_id = models.AutoField(primary_key=True)
+    student_id = models.ForeignKey(Student, on_delete=models.CASCADE, blank=False, null=False)
     topic_description = models.CharField(max_length=250)
     topic_plc_value = models.CharField(max_length=20)
 
